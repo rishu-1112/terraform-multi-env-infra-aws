@@ -1,0 +1,23 @@
+# Terraform state and local settings
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+crash.log
+override.tf
+override.tf.json
+.terraform/
+.terraform.lock.hcl
+
+# Sensitive key files
+*.pem
+*.key
+*.crt
+*.csr
+
+# Local IDE and OS files
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo

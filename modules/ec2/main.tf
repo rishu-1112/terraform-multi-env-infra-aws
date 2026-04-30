@@ -1,8 +1,10 @@
 resource "aws_instance" "this" {
-  ami           = "ami-0f5ee92e2d63afc18"
+  ami           = var.ami-id
   instance_type = var.instance_type
 
   tags = {
     Name = var.name
   }
+  key_name = "my-key-pair"
+  security_groups = ["default"]
 }
